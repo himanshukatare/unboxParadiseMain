@@ -7,7 +7,7 @@
       "kitName": "Starter Edition",
       "tagline": "",
       "items": "👕 T-shirt + 💌 Welcome Card + 📄 Notepad + 🖊️ Pen",
-      "actualPrice": "₹699",
+      "actualPrice": "799",
       "price": "₹499",
       "textColor": "text-pink-600",
       "image": "/resource/welcomekit1.avif"
@@ -18,8 +18,8 @@
       "kitName": "Starter Plus Edition",
       "tagline": "",
       "items": "👕 T-shirt + 📄 Notepad + 🖊️ Pen + 💌 Welcome Card + 🧴 Water Bottle",
-      "actualPrice": "₹899",
-      "price": "₹599",
+      "actualPrice": "999",
+      "price": "₹699",
       "textColor": "text-pink-600",
       "image": "/resource/top-10-top-20-employee-joining-welcome-kit-ideas-19.webp"
     },
@@ -29,8 +29,8 @@
       "kitName": "Starter Pro Edition",
       "tagline": "",
       "items": "👕 T-shirt + 📄 Notepad + 🖊️ Pen + 🪪 ID Card + 🧴 Water Bottle + 🎒 Bag",
-      "actualPrice": "₹1099",
-      "price": "₹799",
+      "actualPrice": "₹1399",
+      "price": "₹999",
       "textColor": "text-pink-600",
       "image": "/resource/corporategift.webp"
     }
