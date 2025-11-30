@@ -119,7 +119,6 @@
           "id": "UBWT006",
           "name": "Elite Plus Tshirt",
           "badge": "Luxury Range",
-          "image": "/resource/catalog_image/UBWH001.png",
           "searchText": "promotional t-shirt, corporate t-shirt, event t-shirt, team t-shirt, merchandise t-shirt,t-shirt, tee shirt, tee, crew neck t-shirt, round neck t-shirt, v-neck t-shirt, polo t-shirt, half sleeve t-shirt, full sleeve t-shirt, oversized t-shirt, relaxed fit t-shirt, regular fit t-shirt, slim fit t-shirt, athletic fit t-shirt, cotton t-shirt, polyester t-shirt, dry-fit t-shirt, performance t-shirt, sports t-shirt, training t-shirt, gym t-shirt, running t-shirt, casual t-shirt, basic t-shirt, graphic t-shirt, printed t-shirt, embroidered t-shirt, logo t-shirt, branded t-shirt",
           "originalPrice": "999",
           "price": "599",
@@ -610,8 +609,7 @@
           "price": "199",
           "startingFrom": false,
           "images": [
-            "/resource/catalog_image/UBGB001_1.png",
-            "/resource/catalog_image/UBGB001_2.png"
+            "/resource/catalog_image/UBGB001_1.png"
           ],
           "description": [
             "Material - Polyester",
@@ -723,8 +721,8 @@
           "name": "Premium Laptop Sleeve",
           "image": "/resource/top-10-top-20-employee-joining-welcome-kit-ideas-19.webp",
           "searchText": "bag,promotional bag, corporate bag, branded bag, logo printed bag, custom bag,shoulder bag, sling bag, backpack, rucksack, knapsack, laptop bag",
-          "originalPrice": "299",
-          "price": "169",
+          "originalPrice": "599",
+          "price": "349",
           "startingFrom": false,
           "images": [
             "/resource/catalog_image/UNMG103_1.png",
@@ -1310,8 +1308,7 @@
             "Elegant & Sleek Design"
           ],
           "images": [
-            "/resource/catalog_image/UNMG008_1.png",
-            "/resource/catalog_image/UNMG008_2.png"
+            "/resource/catalog_image/UNMG008_1.png"
           ]
         },
         {
