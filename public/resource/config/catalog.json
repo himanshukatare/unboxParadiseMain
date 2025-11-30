@@ -289,7 +289,7 @@
         {
           "id": "UBWB001",
           "name": "AlumiFlow",
-          "image": "/resource/catalog_image/UBWB001_1.PNG",
+          "image": "/resource/catalog_image/UBWB001_1.png",
           "originalPrice": "299",
           "price": "219",
           "startingFrom": false,
@@ -945,15 +945,15 @@
             "5 Color Sticky Pointers – 25 sheets each for quick "
           ],
           "images": [
-            "/resource/catalog_image/UBNP007_1.PNG",
-            "/resource/catalog_image/UBNP007_2.PNG",
-            "/resource/catalog_image/UBNP007_3.PNG"
+            "/resource/catalog_image/UBNP007_1.png",
+            "/resource/catalog_image/UBNP007_2.png",
+            "/resource/catalog_image/UBNP007_3.png"
           ]
         },
         {
           "id": "UBNP004",
           "name": "Premium Customised NotePad",
-          "image": "/resource/catalog_image/UBP004.PNG",
+          "image": "/resource/catalog_image/UBP004.png",
           "originalPrice": "239",
           "price": "149",
           "startingFrom": true,
@@ -980,9 +980,9 @@
             "Professional Look & Feel"
           ],
           "images": [
-            "/resource/catalog_image/UBNP006_1.PNG",
-            "/resource/catalog_image/UBNP006_2.PNG",
-            "/resource/catalog_image/UBNP006_3.PNG"
+            "/resource/catalog_image/UBNP006_1.png",
+            "/resource/catalog_image/UBNP006_2.png",
+            "/resource/catalog_image/UBNP006_3.png"
           ]
         },
         {
@@ -1035,9 +1035,9 @@
             "120 GSM Paper"
           ],
           "images": [
-            "/resource/catalog_image/UBDY006_1.PNG",
-            "/resource/catalog_image/UBDY006_2.PNG",
-            "/resource/catalog_image/UBDY006_3.PNG"
+            "/resource/catalog_image/UBDY006_1.png",
+            "/resource/catalog_image/UBDY006_2.png",
+            "/resource/catalog_image/UBDY006_3.png"
           ]
         },
         {
