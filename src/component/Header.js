@@ -171,17 +171,37 @@ const Header = ({ data }) => {
                                     </>
                                 )}
                             </div>
-                            <button
-                                type="button"
-                                className="lg:hidden flex items-center justify-center rounded-lg border border-white/15 bg-white/10 p-2 text-white shadow-md transition-all hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-orange-400"
-                                onClick={() => setMobileMenuOpen((prev) => !prev)}
-                                aria-label="Toggle navigation menu"
-                                aria-expanded={mobileMenuOpen}
-                            >
-                                <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                                </svg>
-                            </button>
+                            <div className="flex items-center gap-2">
+                                {/* Cart Icon - Always Visible Next to Hamburger */}
+                                <Link 
+                                    to="/my-cart" 
+                                    onClick={scrollToTop}
+                                    className="lg:hidden flex items-center justify-center relative rounded-lg hover:bg-white/10 transition-all group"
+                                    aria-label="View cart"
+                                >
+                                    <svg className="w-6 h-6 text-orange-400 group-hover:text-orange-300 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                    {cartCount > 0 && (
+                                        <span className="absolute top-0 right-0 inline-flex items-center justify-center w-5 h-5 text-xs font-bold text-white bg-gradient-to-r from-orange-500 to-pink-500 rounded-full transform translate-x-1 -translate-y-1">
+                                            {cartCount}
+                                        </span>
+                                    )}
+                                </Link>
+                                
+                                {/* Hamburger Button */}
+                                <button
+                                    type="button"
+                                    className="lg:hidden flex items-center justify-center rounded-lg border border-white/15 bg-white/10 p-2 text-white shadow-md transition-all hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-orange-400"
+                                    onClick={() => setMobileMenuOpen((prev) => !prev)}
+                                    aria-label="Toggle navigation menu"
+                                    aria-expanded={mobileMenuOpen}
+                                >
+                                    <svg className="h-5 w-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
 
                             <div
                                 className={`lg:hidden absolute top-16 right-0 w-64 rounded-2xl border border-white/15 bg-black/90 backdrop-blur-lg shadow-2xl transition-all duration-200 ${
@@ -242,15 +262,6 @@ const Header = ({ data }) => {
                                             )}
                                         </li>
                                     ))}
-                                    <li>
-                                        <Link
-                                            to="/my-cart"
-                                            onClick={() => setMobileMenuOpen(false)}
-                                            className="text-sm font-medium text-white/90 hover:text-white transition-colors"
-                                        >
-                                            My Cart{cartCount > 0 ? ` (${cartCount})` : ''}
-                                        </Link>
-                                    </li>
                                     <li>
                                         {data.ctaButton?.url?.startsWith('http') ? (
                                             <a
