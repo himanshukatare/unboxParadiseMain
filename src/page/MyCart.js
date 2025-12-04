@@ -247,14 +247,32 @@ const MyCart = () => {
                                                 <label htmlFor={`quantity-${item.id}`} className="text-sm text-gray-300">
                                                     Quantity
                                                 </label>
-                                                <input
-                                                    id={`quantity-${item.id}`}
-                                                    type="number"
-                                                    min="1"
-                                                    value={quantities[item.id] || 1}
-                                                    onChange={(e) => handleQuantityChange(item.id, e.target.value)}
-                                                    className="w-20 rounded-lg border border-white/20 bg-white/10 px-3 py-2 text-white focus:outline-none focus:ring-2 focus:ring-orange-400"
-                                                />
+                                                <div className="flex items-center gap-2 border border-white/20 rounded-lg bg-white/10 p-1">
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => handleQuantityChange(item.id, Math.max(1, (quantities[item.id] || 1) - 1))}
+                                                        className="px-3 py-1 text-white hover:bg-white/20 rounded transition-colors"
+                                                        aria-label="Decrease quantity"
+                                                    >
+                                                        −
+                                                    </button>
+                                                    <input
+                                                        id={`quantity-${item.id}`}
+                                                        type="number"
+                                                        min="1"
+                                                        value={quantities[item.id] || 1}
+                                                        onChange={(e) => handleQuantityChange(item.id, e.target.value)}
+                                                        className="w-12 text-center bg-transparent text-white focus:outline-none"
+                                                    />
+                                                    <button
+                                                        type="button"
+                                                        onClick={() => handleQuantityChange(item.id, (quantities[item.id] || 1) + 1)}
+                                                        className="px-3 py-1 text-white hover:bg-white/20 rounded transition-colors"
+                                                        aria-label="Increase quantity"
+                                                    >
+                                                        +
+                                                    </button>
+                                                </div>
                                             </div>
                                             <button
                                                 type="button"
