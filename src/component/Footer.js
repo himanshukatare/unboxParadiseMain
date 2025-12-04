@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useContactDetails from '../hooks/useContactDetails';
 
 const Footer = ({ data }) => {
@@ -59,11 +60,11 @@ const Footer = ({ data }) => {
                 </a>
                 )}
                 
-                {/* Blog Link - SEO */}
+                {/* Blog Link - SEO (use client-side navigation to avoid server 404 on refresh) */}
                 <div className="mt-2 mb-2">
-                    <a href="/blogs/corporate-gifting-seo" className="text-white hover:underline text-sm">
+                    <Link to="/blogs/corporate-gifting-seo" className="text-white hover:underline text-sm">
                         Corporate Gifting: Best Practices
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Social Media - Follow Us */}
